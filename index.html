@@ -4,11 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Things Fall Apart Analysis</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --accent: #4a90e2;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: var(--text-main);
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            margin: 2rem auto;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .chart-container {
+            width: 100%;
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 1rem;
+            box-sizing: border-box;
+            border: 1px solid #eaeaea;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
-<body style="text-align:center; font-family:sans-serif;">
-    <h1>Character Frequency Analysis</h1>
-    <p>Based on Things Fall Apart by Chinua Achebe</p>
-    
-    <img src="chart.png" alt="Pie Chart" width="400">
+<body>
+    <div class="container">
+        <h1>Character Frequency Analysis</h1>
+        <p>Based on <strong>Things Fall Apart</strong> by Chinua Achebe</p>
+        
+        <div class="chart-container">
+            <img src="chart.png" alt="Pie Chart showing character frequency in Things Fall Apart">
+        </div>
+    </div>
 </body>
 </html>
